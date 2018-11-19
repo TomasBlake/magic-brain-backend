@@ -31,6 +31,7 @@ app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcry
 app.post('/signin', signin.handleSignin(db, bcrypt)); //advanced syntax
 app.put('/profile/:id', (req, res) => { profile.handleProfile(req, res, db)});
 app.put('/image', (req, res) => { image.handleImage(req, res, db)});
+app.post('/imageurl', (req, res) => {image.handleApiCall(req, res)});
 
 /*
 API planning
